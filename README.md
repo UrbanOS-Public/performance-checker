@@ -14,3 +14,9 @@ NOTE: None of these values can contain spaces
 ##Example `inputs.txt`
 
 `https://example.com/api/v1/user/view 5 https://pushgateway.example.com my_app /api/v1/user/view`
+
+##To run locally
+```bash
+docker build . -t perf-test
+docker run -it --rm -v $(pwd)/inputs.txt:/inputs.txt perf-test
+```

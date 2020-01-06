@@ -8,7 +8,7 @@ do
     pushgateway_url="${inputs[2]}"
     app_name="${inputs[3]}"
     label="${inputs[4]}"
-    echo "Running check against: $url"
-    . run-perf-check.sh $url_to_test $num_reqs $pushgateway_url $job_name $label
+    echo "Running check against: $url_to_test"
+    . run-perf-check.sh $url_to_test $num_reqs $pushgateway_url $app_name $label
     echo ""
 done < "$input"
