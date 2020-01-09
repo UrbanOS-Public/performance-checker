@@ -1,5 +1,6 @@
 #!/bin/bash
-input="/input-files/inputs.txt"
+input="/input-files/${TARGET}.txt"
+
 while IFS= read -r line || [ -n "$line" ];
 do
     read -r -a inputs <<< $line
